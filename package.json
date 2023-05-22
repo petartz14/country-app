@@ -18,7 +18,6 @@
         "vue": "^3.2.41"
     },
     "dependencies": {
-        "@heroicons/vue": "^2.0.18",
-        "vuedraggable": "^4.1.0"
+        "@heroicons/vue": "^2.0.18"
     }
 }

@@ -3,7 +3,6 @@ import { Squares2X2Icon } from "@heroicons/vue/24/solid";
 import { router } from "@inertiajs/vue3";
 import { watch } from "vue";
 import { ref } from "vue";
-import draggable from "vuedraggable";
 
 let props = defineProps({
     title: String,

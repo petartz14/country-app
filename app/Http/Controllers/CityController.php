@@ -28,7 +28,7 @@ class CityController extends Controller
 
         return Redirect::back()->with('notification', [
             'type' => NotificationType::Failure,
-            'message' => 'Failed to moved.',
+            'message' => 'Failed to moved. Different country.',
         ]);
 
     }
