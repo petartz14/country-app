@@ -10,4 +10,9 @@ class City extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'image_url', 'country'];
+
+    public function users()
+    {
+        return $this->belongsToMany(User::class, UserCity::class);
+    }
 }

@@ -20,10 +20,13 @@ let page = usePage();
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="grid grid-col-1 md:grid-cols-3 gap-4">
                     <CountryList title="Common" :cities="page.props.cities" />
-                    <CountryList title="India" :cities="page.props.cities" />
+                    <CountryList
+                        title="India"
+                        :cities="page.props.indiaCities"
+                    />
                     <CountryList
                         title="Philippines"
-                        :cities="page.props.cities"
+                        :cities="page.props.philippinesCities"
                     />
                 </div>
             </div>
