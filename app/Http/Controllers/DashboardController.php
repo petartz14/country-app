@@ -11,7 +11,9 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $cities = City::query()->doesntHave('users')->orderBy('name')->get();
+        $cities = City::query()->whereDoesntHave('users', function (Builder $query) {
+                    $query->where('users.id', auth()->user()->id);
+                })->orderBy('name')->get();
 
         $philippinesCities = City::query()->whereHas('users', function (Builder $query) {
                                 $query->where('users.id', auth()->user()->id);
